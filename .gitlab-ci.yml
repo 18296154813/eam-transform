@@ -1,0 +1,51 @@
+image: docker:latest
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+#   SPRING_PROFILES_ACTIVE: gitlab-ci
+
+stages:
+  - build
+#  - package
+  - deploy
+
+build:maven:
+  image: maven:3-jdk-8
+  stage: build
+  script: "mvn package -B -Dmaven.test.skip=true"
+  artifacts:
+    paths:
+      - target/asset.jar
+    expire_in: 1 mo
+  only:
+    - master
+
+deploy:docker:
+  stage: deploy
+  script:
+  - ls -a
+  - ls -a target
+  - cp target/asset.jar docker-run/
+
+  # docker login
+  - docker login -u $DOCKER_ID_USER -p $DOCKER_ID_PASSWORD
+
+  # build web
+  - docker build -t $DOCKER_ID_USER/asset-run docker-run
+  - docker push  $DOCKER_ID_USER/asset-run
+
+  # build db
+#  - docker build -t $DOCKER_ID_USER/asset-db docker-db
+#  - docker push  $DOCKER_ID_USER/asset-db
+
+  # docker-gitlab-registry
+  # 该镜像存放的服务器中国无法访问
+#  - docker build -t registry.gitlab.com/jiangtj/enterpriseassetmanagement/asset-run docker-run
+#  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+#  - docker push registry.gitlab.com/jiangtj/enterpriseassetmanagement/asset-run
+  only:
+    - master
+
+
