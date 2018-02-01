@@ -1,6 +1,6 @@
 //弹出框
 const ToastrUtils = {
-    defaultConfig:function () {
+    defaultConfig: function () {
         toastr.options = {
             "closeButton": true,
             "debug": false,
@@ -18,49 +18,68 @@ const ToastrUtils = {
             "hideMethod": "fadeOut"
         };
     },
-    show:function (title,msg,level) {
-        level = level||1;
+    show: function (title, msg, level) {
+        level = level || 1;
         let toastrMethod;
-        switch (level){
-            case 0:toastrMethod = "success";break;
+        switch (level) {
+            case 0:
+                toastrMethod = "success";
+                break;
             case 1:
             case 2:
-            case 3:toastrMethod = "info";break;
+            case 3:
+                toastrMethod = "info";
+                break;
             case 4:
             case 5:
-            case 6:toastrMethod = "warning";break;
+            case 6:
+                toastrMethod = "warning";
+                break;
             case 7:
             case 8:
-            case 9:toastrMethod = "error";break;
+            case 9:
+                toastrMethod = "error";
+                break;
         }
-        toastr[toastrMethod](msg,title);
+        toastr[toastrMethod](msg, title);
     },
-    showResult:function (obj) {
+    showResult: function (obj) {
         let level = Number(obj.code.charAt(1));
-        ToastrUtils.show(obj.title,obj.message,level);
+        ToastrUtils.show(obj.title, obj.message, level);
         if (level >= 4) {
-            console.log("code:"+obj.code+",title:"+obj.title+",message:"+obj.message);
+            console.log("code:" + obj.code + ",title:" + obj.title + ",message:" + obj.message);
         }
     }
 };
 ToastrUtils.defaultConfig();
-
+// function a(){
+//     console.log(1);
+// }
+// function fn(){
+//     a();
+//     if(false){
+//         function a(){
+//             console.log(2)
+//         }
+//     }
+// }
+// fn();
 //SweetAlert弹出框
 const SweetAlertUtils = {
-    show:function (title,text) {
+    show: function (title, text) {
 
         let content;
 
-        if (title === undefined){
+        if (title === undefined) {
             content = {};
-        }else {
-            content = JsonUtils.isJson(title)?title:{
-                "title":title,
-                "text":text
+        } else {
+            content = JsonUtils.isJson(title) ? title : {
+                "title": title,
+                "text": text
             };
         }
 
-        let option = jQuery.extend(true,{
+        let option = jQuery.extend(true, {
             title: "是否确定?",
             text: "你当前的操作属于威胁操作!",
             type: "warning",
@@ -69,27 +88,27 @@ const SweetAlertUtils = {
             confirmButtonText: "确定",
             cancelButtonText: "取消",
             closeOnConfirm: true
-        },content);
+        }, content);
 
         let button = {
-            sure:function () {
+            sure: function () {
                 swal("成功!", "操作成功.", "success");
             },
-            cancel:function () {
+            cancel: function () {
                 //swal("取消!", "您取消了当前操作.", "success");
             }
         };
 
         swal(option, function (isConfirm) {
-            isConfirm?button.sure():button.cancel();
+            isConfirm ? button.sure() : button.cancel();
         });
 
         let returnObj = {
-            sure:function (func) {
+            sure: function (func) {
                 button.sure = func;
                 return returnObj;
             },
-            cancel:function (func) {
+            cancel: function (func) {
                 button.cancel = func;
                 return returnObj;
             }
@@ -101,27 +120,27 @@ const SweetAlertUtils = {
 
 //json
 const JsonUtils = {
-    isJson:function (data) {
+    isJson: function (data) {
         return typeof(data) === "object" && Object.prototype.toString.call(data).toLowerCase() === "[object object]"
             && !data.length;
     },
-    copy:function (obj) {
-        return jQuery.extend(true,{},obj);
+    copy: function (obj) {
+        return jQuery.extend(true, {}, obj);
     },
-    setNull:function (obj) {
-        let copyObj = jQuery.extend(true,{},obj);
-        jQuery.each(copyObj,function (key,value) {
-            if (JsonUtils.isJson(value)){
+    setNull: function (obj) {
+        let copyObj = jQuery.extend(true, {}, obj);
+        jQuery.each(copyObj, function (key, value) {
+            if (JsonUtils.isJson(value)) {
                 copyObj[key] = JsonUtils.setNull(value);
-            }else {
+            } else {
                 copyObj[key] = null;
             }
         });
         return copyObj;
     },
-    clear:function (obj) {
+    clear: function (obj) {
         let length = arguments.length;
-        for (let i =1; i<length; i++){
+        for (let i = 1; i < length; i++) {
             obj[arguments[i]] = undefined;
         }
     }
@@ -130,7 +149,7 @@ const JsonUtils = {
 //Modal
 function ModalBuilder(position) {
     this.obj = $(position);
-    if (this.option !== undefined){
+    if (this.option !== undefined) {
         this.obj.modal(this.option);
     }
 }
@@ -152,9 +171,9 @@ ModalBuilder.prototype.set = function (option) {
 
 //校验
 const ValidationUtils = {
-    check:function (position) {
+    check: function (position) {
         let flag = true;
-        $(position).each(function(){
+        $(position).each(function () {
             let item = $(this);
             item.validate({
                 submitHandler: function () {

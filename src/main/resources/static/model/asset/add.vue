@@ -26,10 +26,11 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">所属网点</label>
                             <div class="col-sm-10">
-                                <select name="pointId" v-model="data.pointId" class="form-control" required>
-                                    <option :value="undefined">---- 请选择 ----</option>
-                                    <option v-for="item in Map.point" :value="item.key">{{ item.value }}</option>
-                                </select>
+                                <tt-simple-tree-children name="pointId" v-model="data.pointId" :data="getPointMapById(0)" :func="getPointMapById"></tt-simple-tree-children>
+                                <!--<select name="pointId" v-model="data.pointId" class="form-control" required>-->
+                                    <!--<option :value="undefined">&#45;&#45;&#45;&#45; 请选择 &#45;&#45;&#45;&#45;</option>-->
+                                    <!--<option v-for="item in Map.point" :value="item.key">{{ item.value }}</option>-->
+                                <!--</select>-->
                             </div>
                         </div>
                         <div class="hr-line-dashed"></div>
@@ -96,6 +97,13 @@
                 let self;
                 Server.assetType.getMapByPid.param("pid",id).setAsync(false).execute((data) => {
                     self = data.object;
+                });
+                return self;
+            },
+            getPointMapById:function (id) {
+                let self;
+                Server.point.getMapByPid.param("pid",id).setAsync(false).execute((data)=>{
+                   self = data.object;
                 });
                 return self;
             }

@@ -4,7 +4,7 @@ const AppMenu = [
         name:"首页",
         icon:"fa-dashboard",
         url:"/",
-        staticUrl:"/model/index.vue"
+        staticUrl:"/model/index.vue",
     },
     {
         code:"Asset",
@@ -35,7 +35,7 @@ const AppMenu = [
         list:[
             {name:"任务",permission:"stockTake:getList",url:"/stockTake/task",staticUrl:"/model/stockTake/task.vue"},
             {name:"明细",permission:"stockTake:item:getList",url:"/stockTake/item",staticUrl:"/model/stockTake/item.vue"},
-            {name:"任务",permission:"stockTake:handle",url:"/stockTake/handle",staticUrl:"/model/stockTake/handle.vue"}
+            {name:"处理",permission:"stockTake:handle",url:"/stockTake/handle",staticUrl:"/model/stockTake/handle.vue"}
         ]
     },
     {

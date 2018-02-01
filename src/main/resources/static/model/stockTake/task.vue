@@ -10,7 +10,7 @@
                 <div class="ibox-content">
                     <form role="form" class="form-inline">
 
-                        <tt-simple-input label="名称" v-model="conditions.name"></tt-simple-input>
+                        <tt-simple-select label="名称" v-model="conditions.name" :data = ""></tt-simple-select>
                         <tt-simple-select label="状态" v-model="conditions.status" :data="Map.stockTakeStatus" show-undefined></tt-simple-select>
 
                         <div class="btn-toolbar pull-right" role="toolbar">
