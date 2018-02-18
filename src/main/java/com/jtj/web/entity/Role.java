@@ -4,10 +4,7 @@ import com.jtj.web.common.BaseEntity;
 
 import java.util.List;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/1/31 22:31 End.
- */
+
 public class Role extends BaseEntity {
 
     private String name;//角色名

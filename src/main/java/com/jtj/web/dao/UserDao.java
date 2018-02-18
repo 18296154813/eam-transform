@@ -9,10 +9,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2016/12/23 23:26 End.
- */
 @Mapper
 @Component
 public interface UserDao extends BaseDao<User,UserDto> {

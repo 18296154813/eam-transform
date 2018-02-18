@@ -4,10 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/8/20 21:54 End.
- */
+
 public class JacksonUtils {
 
     private static ObjectMapper objectMapper;

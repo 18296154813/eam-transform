@@ -2,10 +2,7 @@ package com.jtj.web.dto;
 
 import com.jtj.web.common.BaseDto;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/4/29 19:25 End.
- */
+
 public class PointDto extends BaseDto {
 
     private String name;

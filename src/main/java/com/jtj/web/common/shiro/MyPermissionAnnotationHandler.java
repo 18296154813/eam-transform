@@ -12,10 +12,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.lang.annotation.Annotation;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/8/7.
- */
 public class MyPermissionAnnotationHandler extends AuthorizingAnnotationHandler {
 
     public MyPermissionAnnotationHandler() {

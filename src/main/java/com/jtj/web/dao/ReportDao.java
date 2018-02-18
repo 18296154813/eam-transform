@@ -8,10 +8,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/3/15.
- */
+
 @Mapper
 @Component
 public interface ReportDao{

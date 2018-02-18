@@ -11,10 +11,7 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2016/12/23 23:25 End.
- */
+
 @RestController
 @RequestMapping("/user")
 @RequiresPermissions(value = {"sys:user","system-administrator-permission"},logical = Logical.OR)

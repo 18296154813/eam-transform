@@ -17,10 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
+
 @Api("网点管理")
 @RestController
 @RequestMapping("/point")

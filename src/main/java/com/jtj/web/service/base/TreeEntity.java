@@ -4,10 +4,7 @@ import com.jtj.web.common.BaseEntity;
 
 import java.util.List;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/10/15 23:03 End.
- */
+
 public class TreeEntity<T extends TreeEntity<T>> extends BaseEntity {
 
     private Long pid;

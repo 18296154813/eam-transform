@@ -6,10 +6,7 @@ import org.springframework.util.StringUtils;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/8/7.
- */
+
 public class MyFormAuthenticationFilter extends FormAuthenticationFilter {
 
     @Override

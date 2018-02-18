@@ -6,10 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/4/17 22:32 End.
- */
+
 public interface BaseDao<E extends BaseEntity,T extends BaseDto> {
 
     int add(E t);

@@ -16,10 +16,6 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/4/9 20:16 End.
- */
 @Aspect
 @Component
 public class PointAspect {

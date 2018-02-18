@@ -4,11 +4,6 @@ import com.jtj.web.common.BaseEntity;
 
 import java.util.Date;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/5/4.
- * 盘货任务
- */
 public class StockTake extends BaseEntity {
 
     private String name;

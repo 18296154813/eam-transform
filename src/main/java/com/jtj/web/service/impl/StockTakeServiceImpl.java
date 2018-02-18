@@ -25,10 +25,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/5/4.
- */
+
 @Service
 public class StockTakeServiceImpl implements StockTakeService{
 

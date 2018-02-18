@@ -4,10 +4,7 @@ import com.jtj.web.common.BaseEntity;
 
 import java.util.List;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2016/12/23 23:26 End.
- */
+
 public class User extends BaseEntity {
 
     private String name;//用户名

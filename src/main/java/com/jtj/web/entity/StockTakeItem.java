@@ -4,10 +4,6 @@ import com.jtj.web.common.BaseEntity;
 
 import java.math.BigDecimal;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
 public class StockTakeItem extends BaseEntity {
 
     private Long stockTakeId;

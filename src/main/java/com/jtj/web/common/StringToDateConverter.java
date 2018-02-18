@@ -6,10 +6,7 @@ import org.thymeleaf.util.StringUtils;
 
 import java.util.Date;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/4/8.
- */
+
 @Component
 @Deprecated
 public class StringToDateConverter implements Converter<String,Date> {

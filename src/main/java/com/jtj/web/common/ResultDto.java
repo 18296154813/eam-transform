@@ -5,10 +5,7 @@ import com.jtj.web.common.utils.JacksonUtils;
 
 import java.time.LocalDateTime;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/1/22.
- */
+
 public class ResultDto<T> {
     private String code;
     private String title;

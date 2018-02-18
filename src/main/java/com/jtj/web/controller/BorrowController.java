@@ -13,10 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/9/11 20:22 End.
- */
+
 @RestController
 @RequestMapping("/borrow")
 public class BorrowController {

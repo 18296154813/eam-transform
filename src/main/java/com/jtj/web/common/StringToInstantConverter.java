@@ -6,10 +6,7 @@ import org.thymeleaf.util.StringUtils;
 
 import java.time.Instant;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/4/8.
- */
+
 @Component
 public class StringToInstantConverter implements Converter<String,Instant> {
     @Override

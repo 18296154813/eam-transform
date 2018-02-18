@@ -2,10 +2,7 @@ package com.jtj.web.dto;
 
 import org.apache.shiro.authc.UsernamePasswordToken;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/7/26.
- */
+
 public class UsernamePasswordTokenDto extends UsernamePasswordToken {
 
     private Long loginTime;

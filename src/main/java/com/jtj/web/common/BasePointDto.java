@@ -2,10 +2,6 @@ package com.jtj.web.common;
 
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/1/22.
- */
 public class BasePointDto extends BaseDto {
 
     private Long pointId;

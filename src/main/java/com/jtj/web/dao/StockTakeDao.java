@@ -14,10 +14,6 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/3/15.
- */
 @Mapper
 @Component
 public interface StockTakeDao extends BaseDao<StockTake,StockTakeDto>{

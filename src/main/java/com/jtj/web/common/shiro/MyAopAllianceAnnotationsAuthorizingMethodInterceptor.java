@@ -8,10 +8,6 @@ import org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthor
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/8/7.
- */
 public class MyAopAllianceAnnotationsAuthorizingMethodInterceptor
         extends AopAllianceAnnotationsAuthorizingMethodInterceptor {
     public MyAopAllianceAnnotationsAuthorizingMethodInterceptor() {

@@ -4,7 +4,6 @@ import java.util.Random;
 
 /**
  * 验证码生成器
- * Created by maokefeng on 2016/7/11.
  */
 public class SerialCodeUtils {
 

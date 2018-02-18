@@ -12,10 +12,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/4/9 22:55 End.
- */
+
 @ControllerAdvice
 public class ResultExceptionHandler {
 

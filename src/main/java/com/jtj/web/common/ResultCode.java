@@ -1,7 +1,6 @@
 package com.jtj.web.common;
 
 /**
- * Created by MrTT (jiang.taojie@foxmail.com)
  * 0'1'2345
  *    -> 0：标记类型;
  *    -> 1：标记严重级别，0:success,1-3:info,4-6:warn,7-9:error.

@@ -24,11 +24,6 @@ import org.springframework.util.StringUtils;
 
 import java.util.Date;
 import java.util.List;
-
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/3/15.
- */
 @Service
 public class BorrowServiceImpl implements BorrowService {
 

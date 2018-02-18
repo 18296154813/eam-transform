@@ -15,10 +15,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
 @RestController
 @RequestMapping("/assetType")
 public class AssetTypeController {

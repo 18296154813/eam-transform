@@ -11,10 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2016/12/23 23:26 End.
- */
+
 @Service
 public interface BorrowService extends CurdService<Borrow,BorrowDto,BorrowDao> {
 

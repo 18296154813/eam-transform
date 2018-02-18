@@ -16,10 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/5/2 23:50 End.
- */
+
 @Service
 public class AssetOperationRecordServiceImpl implements AssetOperationRecordService {
 

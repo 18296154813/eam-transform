@@ -17,10 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/3/15.
- */
+
 @Service
 public class AssetTypeServiceImpl implements AssetTypeService {
 

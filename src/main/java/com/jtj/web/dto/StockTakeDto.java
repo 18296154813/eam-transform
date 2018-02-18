@@ -5,10 +5,7 @@ import com.jtj.web.common.BaseEntity;
 
 import java.util.Date;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/5/4.
- */
+
 public class StockTakeDto extends BaseDto {
 
     private String name;

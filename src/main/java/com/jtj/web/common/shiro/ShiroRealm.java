@@ -29,10 +29,6 @@ import java.time.Instant;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/7/26.
- */
 public class ShiroRealm extends AuthorizingRealm {
 
     @Autowired

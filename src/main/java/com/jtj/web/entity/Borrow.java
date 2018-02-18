@@ -7,10 +7,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.time.LocalDate;
 import java.util.Date;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
 public class Borrow extends BaseEntity {
 
     private Long userId;

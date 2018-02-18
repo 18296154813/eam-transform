@@ -2,10 +2,6 @@ package com.jtj.web.common;
 
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
 public class PageDto<T> {
 
     private List<T> list;

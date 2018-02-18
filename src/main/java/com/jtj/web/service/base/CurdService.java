@@ -5,10 +5,7 @@ import com.jtj.web.common.exception.AssetException;
 import com.jtj.web.dao.BaseDao;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/10/16.
- */
+
 public interface CurdService<E extends BaseEntity,T extends BaseDto,D extends BaseDao<E,T>> {
 
     D getRepository();

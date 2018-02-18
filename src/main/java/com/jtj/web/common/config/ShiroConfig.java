@@ -20,10 +20,6 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/7/26.
- */
 @Configuration
 public class ShiroConfig {
 

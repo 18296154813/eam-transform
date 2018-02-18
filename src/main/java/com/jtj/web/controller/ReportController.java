@@ -12,10 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
 @RestController
 @RequestMapping("/report")
 public class ReportController {

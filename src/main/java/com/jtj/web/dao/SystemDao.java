@@ -6,10 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/4/10.
- */
+
 @Mapper
 @Component
 public interface SystemDao {

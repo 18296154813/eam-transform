@@ -2,10 +2,7 @@ package com.jtj.web.dto;
 
 import com.jtj.web.common.BaseDto;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
+
 public class UserDto extends BaseDto {
 
     private String name;

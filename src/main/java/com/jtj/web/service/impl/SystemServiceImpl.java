@@ -19,10 +19,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/3/15.
- */
+
 @Service
 public class SystemServiceImpl implements SystemService {
 

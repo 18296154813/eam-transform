@@ -1,9 +1,6 @@
 package com.jtj.web.entity;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/3/15.
- */
+
 public class KeyValue {
 
     private String key;

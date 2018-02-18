@@ -10,10 +10,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-/**
- * Created by jiang (jiang.taojie@foxmail.com)
- * 2017/10/15 22:27 End.
- */
+
 public interface TreeService<T extends TreeEntity<T>> {
 
     T getRootResource();

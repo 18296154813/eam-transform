@@ -10,10 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/3/15.
- */
 @Service
 public class PermissionServiceImpl implements PermissionService {
 

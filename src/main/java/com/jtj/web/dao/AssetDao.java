@@ -6,10 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/3/15.
- */
+
 @Mapper
 @Component
 public interface AssetDao extends BaseDao<Asset,AssetDto>{

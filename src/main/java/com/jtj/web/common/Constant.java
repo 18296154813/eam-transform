@@ -5,10 +5,7 @@ import com.jtj.web.entity.Dictionary;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/1/22.
- */
+
 public class Constant {
 
     public final static String SESSION_USER = "user";

@@ -2,10 +2,7 @@ package com.jtj.web.dto;
 
 import com.jtj.web.common.BaseEntity;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
+
 public class AssetOperationRecordDto extends BaseEntity {
 
     private String uuid;

@@ -5,10 +5,7 @@ import com.jtj.web.entity.Asset;
 
 import java.util.Date;
 
-/**
- * Created by MrTT (jiang.taojie@foxmail.com)
- * 2017/2/22.
- */
+
 public class BorrowDto extends BaseDto {
 
     private Long userId;
